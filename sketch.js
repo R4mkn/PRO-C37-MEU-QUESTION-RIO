@@ -9,8 +9,7 @@ function setup(){
   canvas = createCanvas(850,400);
   database = firebase.database();
   quiz = new Quiz();
-//chame o método start() dentro da classe quiz (questionário)
-
+  quiz.start();
 }
 
 

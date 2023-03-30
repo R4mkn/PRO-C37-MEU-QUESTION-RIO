@@ -2,9 +2,9 @@ class Question {
 
   constructor() {
     this.title = createElement('h1')
-    this.input1 = createInput("Enter Your Name Here....");
-    this.input2 = createInput("Enter Correct Option No..");
-    this.button = createButton('Submit');
+    this.input1 = createInput("Digite Seu Nome Aqui....");
+    this.input2 = createInput("Digite o Nº da Opção Correta...");
+    this.button = createButton('Enviar');
     this.question = createElement('h3');
     this.option1 = createElement('h4');
     this.option2 = createElement('h4');
@@ -24,9 +24,12 @@ class Question {
   display(){
     this.title.html("Meu Questionário");
     this.title.position(350, 0);
-//depure a sintaxe abaixo para exibir a pergunta
-     this.html("Pergunta:- O que é que está no meio do começo, no começo do meio, e no final do fim? " );
-    
+
+    // this.question("Pergunta:- O que é que está no meio do começo, no começo do meio, e no final do fim? " );
+    // this.html("Pergunta:- O que é que está no meio do começo, no começo do meio, e no final do fim? " );
+    this.question.html("Pergunta:- O que é que está no meio do começo, no começo do meio, e no final do fim? " );
+    // question.html("Pergunta:- O que é que está no meio do começo, no começo do meio, e no final do fim? " );
+
     this.question.position(150, 80);
     this.option1.html("1: A letra E" );
     this.option1.position(150, 100);
@@ -43,12 +46,18 @@ class Question {
 
     this.button.mousePressed(()=>{
       
-   
-//corrija o sintaxe abaixo para exibir a mensagem de agradecimento e a posição 
-      this.Message.html("Obrigado, Sua Resposta Foi Enviada");
-      this.message.position(350,0);
+      // this.message.html("Obrigado, Sua Resposta Foi Enviada");
+      // this.message.position(350, 350);
 
-      
+      // this.message.html("Obrigado, Sua Resposta Foi Enviada");
+      // this.message.position();
+
+       this.message("Obrigado, Sua Resposta Foi Enviada");
+       this.message(350, 350);
+
+      // this.message.html("Obrigado, Sua Resposta Foi Enviada");
+      // this.message.position(350);
+
 
     });
   }
